@@ -10,6 +10,12 @@ node_modules
 # Book build output
 _book
 
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
 # eBook build output
 *.epub
 *.mobi
