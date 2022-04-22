@@ -37,7 +37,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '3298241246';
+    var serviceWorkerVersion = '2366505143';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -61,7 +61,7 @@
           .then((reg) => {
             function waitForActivation(serviceWorker) {
               serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state === 'activated') {
+                if (serviceWorker.state == 'activated') {
                   console.log('Installed new service worker.');
                   loadMainDartJs();
                 }
